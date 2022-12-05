@@ -11,6 +11,10 @@ main {
     flex-wrap: wrap;
 }
 
+.main> h3, h1 {
+    background-color: grey;
+}
+
 .nav {
     height: 10vh;
 }
@@ -18,6 +22,7 @@ main {
 .title {
     display: flex;
     justify-content: center;
+    padding-top: 15%;
 }
 
 .contact-container {
@@ -36,4 +41,13 @@ main {
     padding-left: 5%;
     font-size: 1.7em;
     text-decoration: underline;
+}
+
+.subheading {
+    display: flex;
+    padding: 5em;
+}
+
+.button {
+    font-size: 35px;
 }
