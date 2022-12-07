@@ -11,19 +11,30 @@ h1 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-p {
+p:not(address > p) {
     font-size: 1.6em;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #888888;
+    color: white;
+}
+
+html {
+    background-color: #888888;
 }
 
 main {
     display:flex;
     justify-content: center;
     flex-wrap: wrap;
+    background-color: #888888;
 }
 
 .main > h3, h1 {
     background-color: grey;
+}
+
+header {
+    border-bottom: 2px solid black;
 }
 
 .nav {
@@ -39,15 +50,20 @@ main {
 
 .contact-container {
     display: flex;
-    padding-right: 0 5vw 0;
+    /* padding-right: 0 5vw 0; */
+    padding: 15px;
+    justify-content: space-between;
+    align-content: center;
 }
 
 .navigation {
     display: flex;
     justify-content: start;
-    padding-left: 5%;
+    /* padding-left: 5%; */
     font-size: 1.7em;
     text-decoration: underline;
+    width: fit-content;
+    align-content: center;
 }
 
 .subheading {
@@ -65,4 +81,29 @@ main {
     text-align: center;
     text-decoration: none;
     font-size: 2.5em;
+}
+
+address {
+    display: flex;
+    flex-direction: column;
+}
+
+address p{
+    width: 100%;
+    font-size: 1.2em;
+    width: fit-content;
+}
+
+.navigation a{
+    height: fit-content;
+}
+
+/* Second Page */
+
+.content1 {
+    width: 25%;
+}
+
+.content1, .img, .content2 {
+    margin: 20px
 }
